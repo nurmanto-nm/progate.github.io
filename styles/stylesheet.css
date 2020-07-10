@@ -108,7 +108,7 @@ header a {
 
 i {
   background-color: rgb(253, 249, 15);
-  font-size: 24px;    
+  font-size: 24px;
 }
 
 .main1 h3 {
@@ -118,7 +118,7 @@ i {
 .main1 {
   border: 5px;
   width: 100%;
-  height: 400px;  
+  height: 0 auto;
 }
 
 .profil {
@@ -127,14 +127,14 @@ i {
   border-bottom: 1px solid;
   opacity: 0.8;
   margin: 0 auto;
-  text-align: left;  
+  text-align: left;
 }
 
 .visimisi {
   text-align: left;
   margin: 5 auto;
   color: #21211e;
-  padding: 20px 80px  
+  padding: 20px 80px
 }
 
 .visimisi h3{
@@ -151,7 +151,7 @@ i {
 
 /* main2 */
 
-.main2 {  
+.main2 {
   margin-top: 200px;
   width: 100%;
 }
@@ -161,7 +161,7 @@ i {
   border-bottom: 1px solid;
   opacity: 0.8;
   margin: 0 auto;
-  text-align: left;  
+  text-align: left;
   padding: 20px 80px;
 }
 
@@ -199,14 +199,22 @@ i {
 
 .footer {
   margin: 300px 0 0 0;
-  display: flex;
+
   /* padding: 10px 80px; */
   width: 100%;
   height: 220px;
   background-color: #21211e;
   color: white;
 }
+.flex-list {
+  display: flex;
+  list-style-type: none;
+  }
 
+.flex-list li{
+    flex: auto;
+}
+/*
 .footer li {
   list-style-type: none;
   padding-bottom: 25px;
@@ -235,7 +243,7 @@ i {
 .right-box p {
   text-align: left;
 }
-
+*/
 /*------------------------------------------*/
 
 /* Responsif Tablet*/
@@ -251,6 +259,8 @@ i {
   .main2{
     margin-top:50px;
   }
+
+
 }
 
 
@@ -262,6 +272,12 @@ i {
     height: auto;
   }
 
+header {
+  height: auto;
+  display:inline-flex;
+}
+
+
   .visi,
   .misi,
   .profil {
@@ -270,7 +286,8 @@ i {
     height: auto;
   }
 
-  body {
+body {
+
     background-position: center;
     background-size: auto;
   }
@@ -278,4 +295,19 @@ i {
   .main1 {
     background-size: cover;
   }
+  .contents-item {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .contents {
+    height: auto;
 }
+
+.footer {
+    height:auto;
+}
+
+.flex-list {
+  flex-direction: column;
+  }
